@@ -1,0 +1,24 @@
+.woocommerce-page .woocommerce-form-login .show-password-input {
+    display:none !important;
+}
+.password-wrapper {
+    position: relative;
+    display: inline-block;
+    width:100%;
+}
+.field-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px; /* Adjust this value as needed */
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 2;
+}
+.field-icon.toggle-password.eye-close::before{
+    content: url('../images/eye-close.svg');
+    display:flex;
+}
+.field-icon.toggle-password.eye-open::before {
+  content: url('../images/eye-open.svg');
+  display:flex;
+}
